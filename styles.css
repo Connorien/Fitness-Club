@@ -1,0 +1,51 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    position: sticky; /* Keeps navbar at the top when scrolling */
+    top: 0;
+    z-index: 10; /* Ensures navbar stays above other content */
+    background-color: black;
+
+  
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly; /* Space items evenly, including space on edges */
+    width: 100%; /* Make the nav items span the full width */
+}
+
+.navbar ul {
+    padding-left: 8%;
+    font-size: 40px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 40px;
+}
+
+.fitnessCarousel{
+    height: 80vh;
+}
+
+.carousel-caption h5 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+
+.carousel-inner img {
+    height: 80vh; /* Set height to 80% of the viewport */
+    object-fit: cover; /* Ensures images are cropped proportionally */
+    width: 100%; /* Ensures the image stretches across the full width */
+}
+
+
+.col-md-4 {
+    height: 700px; /* Adjust height to your preference */
+    object-fit: cover; /* Ensures the image scales proportionally */
+}
+

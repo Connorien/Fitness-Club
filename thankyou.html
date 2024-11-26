@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/Pawprint.png" type="image/png">
+  <title>Thank you!</title>
+
+  <!-- JavaScript to display query parameters on the page -->
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+
+  <!-- Inline CSS for styling the thank-you page -->
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+      margin: 0;
+    }
+    .container {
+      width: 60%;
+      max-width: 600px;
+      padding: 20px;
+      color: white;
+      background-color: black;
+      border: 1px solid black;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 8px;
+    }
+    .container img {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .submit-button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1em;
+      color: black;
+      background-color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .submit-button:hover {
+      background-color: rgb(107, 84, 84);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main container for thank-you message and return button -->
+  <div class="container">
+    <h2>Thank you! We will be in touch soon!</h2>
+
+    <!-- Displaying query parameters -->
+    <script>
+      printQuery();
+    </script>
+
+    <!-- Button to return to the main website -->
+    <form action="index.html" onsubmit="window.location.href='index.html'; return false;">
+      <button type="submit" class="submit-button">Return to Website</button>
+    </form>
+  </div>
+</body>
+
+</html>
+
